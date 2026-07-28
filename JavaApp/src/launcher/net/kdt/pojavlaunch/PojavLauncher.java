@@ -85,6 +85,7 @@ public class PojavLauncher {
         }
 
         System.setProperty("org.lwjgl.vulkan.libname", "libMoltenVK.dylib");
+        System.setProperty("org.lwjgl.opengl.libname", "liblwjgl_opengl.dylib");
 
         MinecraftAccount account = MinecraftAccount.load(args[0]);
         JMinecraftVersionList.Version version = Tools.getVersionInfo(args[1]);
